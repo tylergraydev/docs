@@ -1,122 +1,131 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Fury",
+  "description": "Cross-platform desktop app for orchestrating AI coding agents",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3b82f6",
+    "light": "#60a5fa",
+    "dark": "#2563eb"
+  },
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg",
+    "href": "https://github.com/tylergraydev/fury"
   },
   "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "dark"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/tylergraydev/fury"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Download",
+      "url": "https://github.com/tylergraydev/fury/releases"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/tylergraydev/fury"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction",
+              "installation",
+              "workflow",
+              "faq"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Account",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "account/privacy"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Features",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Core",
             "pages": [
-              "api-reference/introduction"
+              "core/ai-chat",
+              "core/workspaces",
+              "core/file-viewer",
+              "core/diff-viewer",
+              "core/terminal",
+              "core/checkpoints",
+              "core/pr-management",
+              "core/scripts",
+              "core/mcp",
+              "core/slash-commands",
+              "core/conductor-json",
+              "core/todos",
+              "core/github-actions",
+              "core/linear-integration",
+              "core/copilot",
+              "core/command-palette",
+              "core/merge-view"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Quickstarts",
+            "pages": [
+              "quickstarts/nextjs",
+              "quickstarts/rails",
+              "quickstarts/django",
+              "quickstarts/phoenix"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Guides",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "guides/first-workspace",
+              "guides/issue-to-pr",
+              "guides/run-scripts",
+              "guides/migrate-from-cursor",
+              "guides/providers",
+              "guides/create-from-pr",
+              "guides/create-from-issue"
+            ]
+          },
+          {
+            "group": "Tips",
+            "pages": [
+              "tips/codex",
+              "tips/keyboard-shortcuts",
+              "tips/workspaces-and-branches",
+              "tips/monorepos",
+              "tips/multiple-repos",
+              "tips/environment-variables",
+              "tips/cross-platform",
+              "tips/themes"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "search": {
+    "prompt": "Search Fury docs..."
   }
 }
