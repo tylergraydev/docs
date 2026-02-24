@@ -20,14 +20,14 @@
   "navbar": {
     "links": [
       {
-        "label": "GitHub",
-        "url": "https://github.com/tylergraydev/fury"
+        "type": "github",
+        "href": "https://github.com/tylergraydev/fury"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Download",
-      "url": "https://github.com/tylergraydev/fury/releases"
+      "href": "https://github.com/tylergraydev/fury/releases"
     }
   },
   "footer": {
